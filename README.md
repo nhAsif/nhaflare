@@ -1,12 +1,12 @@
-# Anyflare
+# nhaFlare
 
 ## Introduction
 
-Anyflare is a cloudflare worker proxy which you can deploy yourself to download anything through cloudflare.
+nhaFlare is a cloudflare worker proxy which you can deploy yourself to download anything through cloudflare.
 
 ## Preview
 
-![Anyflare Preview Image](docs/assets/preview.png "Anyflare")
+![nhaFlare Preview Image](docs/assets/preview.png "nhaFlare")
 
 ## Features
 
@@ -18,16 +18,16 @@ Anyflare is a cloudflare worker proxy which you can deploy yourself to download 
 
 ### Easily deploy with Cloudflare Worker
 
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/ajshovon/anyflare)
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/nhAsif/nhaflare)
 
 ### Manual Deploy
 
 ```bash
 # Clone this repo
-git clone https://github.com/ajshovon/anyflare
+git clone https://github.com/nhAsif/nhaflare
 
 # Goto the repo dir
-cd anyflare
+cd nhaflare
 
 # Install dependency
 npm install
