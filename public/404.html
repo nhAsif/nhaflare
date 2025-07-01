@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 – Not Found | Anyflare</title>
-    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path fill="none" d="M0 0h24v24H0z"/><path fill="%233B82F6" d="M13 13v5.585l1.828-1.828 1.415 1.415L12 22.414l-4.243-4.242 1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194 5.5 5.5 0 0 1-.953 10.784v-2.014a3.5 3.5 0 1 0-1.112-6.91 5 5 0 1 0-9.777 0 3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z"/></g></svg>' />
+    <title>404 – Not Found | nhaFlare</title>
+    <link rel="icon" type="image/svg+xml" href='data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path fill="none" d="M0 0h24v24H0z"/><path fill="%23ff79c6" d="M13 13v5.585l1.828-1.828 1.415 1.415L12 22.414l-4.243-4.242 1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194 5.5 5.5 0 0 1-.953 10.784v-2.014a3.5 3.5 0 1 0-1.112-6.91 5 5 0 1 0-9.777 0 3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z"/></g></svg>' />
     <style>
-        /* ... Copy all CSS from your main page here ... */
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Roboto Mono', monospace;
-            background: #0a0a0a;
-            color: #e5e5e5;
+            background: #282a36; /* Dracula background */
+            color: #f8f8f2; /* Dracula foreground */
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -19,11 +18,11 @@
         }
         .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
         header {
-            border-bottom: 1px solid #1a1a1a;
+            border-bottom: 1px solid #44475a; /* Dracula selection/current line */
             padding: 20px 0;
             position: sticky;
             top: 0;
-            background: rgba(10, 10, 10, 0.95);
+            background: rgba(40, 42, 54, 0.95); /* Dracula background with transparency */
             backdrop-filter: blur(10px);
             z-index: 100;
         }
@@ -38,28 +37,28 @@
             gap: 8px;
             font-size: 18px;
             font-weight: 600;
-            color: #3b82f6;
+            color: #ff79c6; /* Primary Pink */
         }
         .logo svg { width: 20px; height: 20px; }
         .nav { display: flex; gap: 24px; align-items: center; }
         .nav a {
-            color: #888;
+            color: #6272a4; /* Dracula comment */
             text-decoration: none;
             font-size: 14px;
             transition: color 0.2s;
         }
-        .nav a:hover { color: #e5e5e5; }
+        .nav a:hover { color: #f8f8f2; /* Dracula foreground */ }
         .theme-toggle {
             background: none;
-            border: 1px solid #333;
-            color: #888;
+            border: 1px solid #6272a4; /* Dracula comment */
+            color: #6272a4; /* Dracula comment */
             padding: 6px 8px;
             border-radius: 4px;
             cursor: pointer;
             font-size: 12px;
             transition: all 0.2s;
         }
-        .theme-toggle:hover { border-color: #555; color: #e5e5e5; }
+        .theme-toggle:hover { border-color: #ff79c6; /* Primary Pink */ color: #ff79c6; /* Primary Pink */ }
         main { flex: 1; padding: 60px 0; }
         .centered-404 {
             display: flex;
@@ -73,20 +72,20 @@
             font-size: 64px;
             font-weight: 900;
             margin-bottom: 12px;
-            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            background: linear-gradient(135deg, #ff79c6, #bd93f9); /* Primary Pink to Dracula Purple */
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
         .centered-404 p {
-            color: #888;
+            color: #6272a4; /* Dracula comment */
             font-size: 18px;
             margin-bottom: 32px;
         }
         .centered-404 .home-btn {
-            background: #3b82f6;
+            background: #ff79c6; /* Primary Pink */
             border: none;
-            color: white;
+            color: #282a36; /* Dracula background for contrast */
             padding: 12px 32px;
             border-radius: 6px;
             cursor: pointer;
@@ -97,27 +96,28 @@
             text-decoration: none;
             display: inline-block;
         }
-        .centered-404 .home-btn:hover { background: #2563eb; }
+        .centered-404 .home-btn:hover { background: #ff5555; /* Dracula Red for hover */ }
         footer {
-            border-top: 1px solid #1a1a1a;
+            border-top: 1px solid #44475a; /* Dracula selection/current line */
             padding: 20px 0;
             text-align: center;
-            color: #555;
+            color: #6272a4; /* Dracula comment */
             font-size: 12px;
         }
-        footer a { color: #3b82f6; text-decoration: none; }
+        footer a { color: #ff79c6; /* Primary Pink */ text-decoration: none; }
         footer a:hover { text-decoration: underline; }
-        .light { background: #ffffff; color: #1a1a1a; }
-        .light header { background: rgba(255,255,255,0.95); border-bottom-color: #e5e5e5; }
-        .light .logo { color: #3b82f6; }
-        .light .nav a { color: #666; }
-        .light .nav a:hover { color: #1a1a1a; }
-        .light .theme-toggle { border-color: #e5e5e5; color: #666; }
-        .light .theme-toggle:hover { border-color: #ccc; color: #1a1a1a; }
-        .light .centered-404 p { color: #666; }
-        .light .centered-404 .home-btn { background: #3b82f6; color: #fff; }
-        .light .centered-404 .home-btn:hover { background: #2563eb; }
-        .light footer { border-top-color: #e5e5e5; color: #999; }
+        /* Light theme (will be overridden by Dracula dark theme) */
+        .light { background: #f8f8f2; /* Dracula foreground */ color: #282a36; /* Dracula background */ }
+        .light header { background: rgba(248,248,242,0.95); border-bottom-color: #6272a4; /* Dracula comment */ }
+        .light .logo { color: #ff79c6; /* Primary Pink */ }
+        .light .nav a { color: #44475a; /* Dracula selection/current line */ }
+        .light .nav a:hover { color: #282a36; /* Dracula background */ }
+        .light .theme-toggle { border-color: #6272a4; /* Dracula comment */ color: #44475a; /* Dracula selection/current line */ }
+        .light .theme-toggle:hover { border-color: #ff79c6; /* Primary Pink */ color: #282a36; /* Dracula background */ }
+        .light .centered-404 p { color: #44475a; /* Dracula selection/current line */ }
+        .light .centered-404 .home-btn { background: #ff79c6; /* Primary Pink */ color: #282a36; /* Dracula background */ }
+        .light .centered-404 .home-btn:hover { background: #ff5555; /* Dracula Red for hover */ }
+        .light footer { border-top-color: #6272a4; /* Dracula comment */ color: #44475a; /* Dracula selection/current line */ }
         @media (max-width: 768px) {
             .container { padding: 0 16px; }
             .centered-404 h1 { font-size: 40px; }
@@ -134,13 +134,13 @@
                     <svg viewBox="0 0 24 24" fill="currentColor">
                         <path d="M13 13v5.585l1.828-1.828 1.415 1.415L12 22.414l-4.243-4.242 1.415-1.415L11 18.585V13h2zM12 2a7.001 7.001 0 0 1 6.954 6.194 5.5 5.5 0 0 1-.953 10.784v-2.014a3.5 3.5 0 1 0-1.112-6.91 5 5 0 1 0-9.777 0 3.5 3.5 0 0 0-1.292 6.88l.18.03v2.014a5.5 5.5 0 0 1-.954-10.784A7 7 0 0 1 12 2z"/>
                     </svg>
-                    anyflare
+                    nhaFlare
                 </div>
                 <nav class="nav">
                     <a href="/">home</a>
                     <a href="/#faq">faq</a>
-                    <a href="/#deploy">deploy</a>
-                    <a href="https://github.com/ajshovon/anyflare" target="_blank">github</a>
+                    <!-- Removed deploy link from navigation -->
+                    <a href="https://github.com/nhAsif/nhaflare" target="_blank">github</a>
                     <button class="theme-toggle" id="themeToggle">◐</button>
                 </nav>
             </div>
@@ -157,7 +157,7 @@
     </main>
     <footer>
         <div class="container">
-            <p>made with ❤️ by <a href="https://shovon.me" target="_blank">[.shovon]</a> • powered by cloudflare workers</p>
+            <p>made with ❤️ by <a href="https://nhasif.me" target="_blank">[.nhAsif]</a> • powered by cloudflare workers</p>
         </div>
     </footer>
     <script>
