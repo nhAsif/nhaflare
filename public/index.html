@@ -42,6 +42,8 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+            gap: 8px; /* Adjust as needed */
         }
 
         .logo {
@@ -89,6 +91,22 @@
         .theme-toggle:hover {
             border-color: #ff79c6; /* Primary Pink */
             color: #ff79c6; /* Primary Pink */
+        }
+
+        .header-credit {
+            font-size: 10px; /* Smaller font size for credit */
+            color: #6272a4; /* Dracula comment color */
+            margin-left: auto; /* Pushes it to the right if space allows */
+            text-align: right; /* Align text to the right */
+        }
+
+        .header-credit a {
+            color: #ff79c6; /* Primary Pink */
+            text-decoration: none;
+        }
+
+        .header-credit a:hover {
+            text-decoration: underline;
         }
 
         main {
@@ -369,6 +387,10 @@
             color: #282a36; /* Dracula background */
         }
 
+        .light .header-credit {
+            color: #44475a; /* Dracula selection/current line */
+        }
+
         .light .hero p {
             color: #44475a; /* Dracula selection/current line */
         }
@@ -492,6 +514,9 @@
                     <a href="https://github.com/ajshovon/anyflare" target="_blank">github</a>
                     <button class="theme-toggle" id="themeToggle">◐</button>
                 </nav>
+                <div class="header-credit">
+                    <p>made with ❤️ by <a href="https://github.com/nhAsif" target="_blank">[.nhAsif]</a> • powered by cloudflare workers</p>
+                </div>
             </div>
         </div>
     </header>
@@ -582,7 +607,7 @@
 
     <footer>
         <div class="container">
-            <p>made with ❤️ by <a href="https://github.com/nhAsif" target="_blank">[.nhAsif]</a> • powered by cloudflare workers</p>
+            <!-- The credit has been moved to the header -->
         </div>
     </footer>
 
